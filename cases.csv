@@ -1,0 +1,15 @@
+Parameter,unit,Model Default (Potato),Winter Wheat,Pear,Raspberry,Blueberry (Open field),Blueberry (Tunnel),Potato
+start_season,day of the year,100,290,100,98,120,,109
+days,days of the season,100,288,150,150,120,150,131
+rue,g (total DM)/kWh,10.8,7.74,5.57,2.26,3.44,0.57,10.8
+k,unitless,0.65,0.46,0.69,0.2,0.6,0.17,0.73
+sla,m� leaf/g (DW),0.03,0.02,0.005,0.0205,0.0205,,0.026
+alloc_leaf,fraction: leaf weigth/total weight,0.3,0.15,,0.24,0.26,0.26,0.204
+alloc_yield,fraction: yield weigth/total weight,0.5,0.4,0.635,0.45,0.49,0.49,0.58
+max_lai,max m� leaf/m� soil,6,4.5,4.1,2.8,2.8,,5.86
+rue_shaded,g (total DM)/kWh,10.8,8.748,5.57,2.85,4.51,,4.1
+sla_shaded,m� leaf/g,0.03,0.026,0.0062,0.027,0.027,,0.037
+alloc_leaf_shaded,fraction: leaf weigth/total weight,0.3,0.15,,0.24,0.26,0.26,0.28
+alloc_yield_shaded,fraction: leaf weigth/total weight,0.5,0.39,0.54,0.45,0.49,0.49,0.46
+dmc_shaded,fraction: yield dry weight/fresh weight,0.2,0.85,0.1278,0.14,0.14,,0.1
+dmc,fraction: yield dry weight/fresh weight,0.2,0.85,0.15,0.15,0.15,,0.23
