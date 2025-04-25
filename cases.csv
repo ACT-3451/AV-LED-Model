@@ -1,15 +1,20 @@
-Parameter,unit,Model Default (Potato),Winter Wheat,Pear,Raspberry,Blueberry (Open field),Blueberry (Tunnel),Potato
-start_season,day of the year,100,290,100,98,120,,109
-days,days of the season,100,288,150,150,120,150,131
-rue,g (total DM)/kWh,10.8,7.74,5.57,2.26,3.44,0.57,10.8
-k,unitless,0.65,0.46,0.69,0.2,0.6,0.17,0.73
-sla,m� leaf/g (DW),0.03,0.02,0.005,0.0205,0.0205,,0.026
-alloc_leaf,fraction: leaf weigth/total weight,0.3,0.15,,0.24,0.26,0.26,0.204
-alloc_yield,fraction: yield weigth/total weight,0.5,0.4,0.635,0.45,0.49,0.49,0.58
-max_lai,max m� leaf/m� soil,6,4.5,4.1,2.8,2.8,,5.86
-rue_shaded,g (total DM)/kWh,10.8,8.748,5.57,2.85,4.51,,4.1
-sla_shaded,m� leaf/g,0.03,0.026,0.0062,0.027,0.027,,0.037
-alloc_leaf_shaded,fraction: leaf weigth/total weight,0.3,0.15,,0.24,0.26,0.26,0.28
-alloc_yield_shaded,fraction: leaf weigth/total weight,0.5,0.39,0.54,0.45,0.49,0.49,0.46
-dmc_shaded,fraction: yield dry weight/fresh weight,0.2,0.85,0.1278,0.14,0.14,,0.1
-dmc,fraction: yield dry weight/fresh weight,0.2,0.85,0.15,0.15,0.15,,0.23
+Parameter,unit,Model Default (Potato),Winter Wheat,range,Comments,Pear,range,Comments,Raspberry,range,comments,Blueberry (Open field),range,Comments,Blueberry (Tunnel),range,Comments,Potato,range,Comments,Sugar beet
+start_season,day of the year,100,290,,,100,,10.17660/ActaHortic.2002.596.121,98,,All raspberry data from the Babberich trial from Frank,120,,"Blueberry data from 2018 UK paper. Light: ~2 KWh PAR
+https://doi.org/10.1093/jxb/ery118 ",,,https://doi.org/10.21273/HORTSCI.44.7.1850 ,109,109 to 164,"from the Netherlands, https://doi.org/10.1016/j.jag.2004.03.002.",100
+days,days of the season,100,288,,,150,,10.17660/ActaHortic.2002.596.121,150,,,120,120 to 150,,79-150,,https://doi.org/10.21273/HORTSCI13639-18 ,131,84 to 152,"from the Netherlands, https://doi.org/10.1016/j.jag.2004.03.002.",180
+rue,g (total DM)/kWh,10.8,9.72,1.97-2.7,values in paper are in g/MJ -  https://doi.org/10.1007/s40502-018-0400-x,5.57,3.6-7.9,,2.26,,,3.44,0.39 to 3.44,"3.44 is from https://doi.org/10.1016/j.scienta.2013.02.012 
+0.39 is from 2018 UK paper",0.57,,,10.8,***,"for total DM, in Denmark,with average 150kg N ha-1, https://doi.org/10.1016/j.agrformet.2016.10.017",
+k,unitless,0.65,0.51,0.41-0.51 , https://doi.org/10.1007/s40502-018-0400-x,0.69,0.46-0.83,https://doi.org/10.3390/agriculture12101653,0.2,a typical value would be 0.6,Calculated with fraction of light intercepted data from Babberich,0.6,,"typical value, but no source",0.17,,,0.73,0.66 or 0.73,"in the Netherlands, range is from different varieties, https://doi.org/10.1016/j.jag.2004.03.002",
+sla,m² leaf/g (DW),0.03,0.02,,https://doi.org/10.1016/j.fcr.2013.05.015,0.005,,https://doi.org/10.1101/2024.04.24.590973,0.0205,,,0.0205,,Red are values that are taken from raspberries,,,,0.026,0.023 to 0.03,"in the Netherlands, Greenhouse, https://doi.org/10.1016/S1161-0301(00)00090-3",0.0165
+alloc_leaf,fraction: leaf weigth/total weight,0.3,0.15,,DOI 10.1007/s11104-016-2847-8 (sum of 10 leaf % allocation of different wheat cultivars),,,LAI https://doi.org/10.1016/j.eja.2013.05.007,0.24,,,0.26,,https://doi.org/10.1093/jxb/ery118 calculated with total sugar content in the different organs. Table S1,0.26,,,0.204,0.06 to 0.48,"in America, 10.4236/ajps.2012.31019 ",
+alloc_yield,fraction: yield weigth/total weight,0.5,0.4,0.36 – 0.44,,0.635,,Ton/ha https://doi.org/10.1101/2024.04.24.590973 Calculations based on yield and planting density ,0.45,,,0.49,,,0.49,,,0.58,0.125 to 0.81,"in America, 10.4236/ajps.2012.31019 ",
+max_lai,max m² leaf/m² soil,6,4.5,, https://doi.org/10.1007/s40502-018-0400-x,4.1,,Maximum LAI https://doi.org/10.3390/agriculture12101653,2.8,,,2.8,,,,,,5.86,5.31 to 7.51," from the Netherlands, https://doi.org/10.1016/j.jag.2004.03.002",
+rue_shaded,g (total DM)/kWh,10.8,10.98586046,2.36-2.50,values in paper are in g/MJ - https://doi.org/10.1016/j.eja.2016.10.014 ,5.57,,,2.85,,43% less light,4.51,0.23 to 4.51,"Shaded: 1.89 KWh PAR (2012)
+4.51 is from https://doi.org/10.1016/j.scienta.2013.02.012 50% shade
+0.23 is from 2018 UK paper",,,,4.1,,"in Germany, 50% shaded, https://doi.org/10.3390/agronomy9060330",
+sla_shaded,m² leaf/g,0.03,0.026,,https://doi.org/10.1111/jac.12008,0.0062,,https://doi.org/10.1101/2024.04.24.590973,0.027,,43% less light,0.027,,,,,,0.037,"0.027 to 0.04 (50% shaded), 0.027 to 0.05 (90% shaded)","in the Netherlands, Greenhouse, range is from whole experiment duration. Data is from the end of duration. https://doi.org/10.1016/S1161-0301(00)00090-3",0.0175
+alloc_leaf_shaded,fraction: leaf weigth/total weight,0.3,0.15,,Assuming same biomass partioning to leaf as in light,,,,0.24,,43% less light. Assuming same biomass partitioning as light,0.26,, Assuming same biomass partitioning as light,0.26,, Assuming same biomass partitioning as light,0.28,0.1 to 0.5,"in Japan, 30cm growing distance. https://doi.org/10.2525/ecb1963.40.259",
+alloc_yield_shaded ,fraction: leaf weigth/total weight,0.5,0.39,0.38-0.40,https://doi.org/10.1016/j.eja.2023.126922,0.54,,Ton/ha  24% light reduction Calculations based on yield and planting density https://doi.org/10.1101/2024.04.24.590973,0.45,,43% less light Assuming same biomass partitioning as light,0.49,, Assuming same biomass partitioning as light,0.49,, Assuming same biomass partitioning as light,0.46,0.05 to 0.76,"in the Netherlands, Greenhouse, range is from whole experiment duration. Data is from 50% shaded. https://doi.org/10.1016/S1161-0301(00)00090-3",
+dmc_shaded,fraction: yield dry weight/fresh weight,0.2,0.85,,Assumed that dmc in shade is the same as dmc in light,0.1278,,Based on calculations from yield and dmc,0.14,,,0.14,,,,,,0.1,0.013 to 0.185,"in Japan, 30cm growing distance. https://doi.org/10.2525/ecb1963.40.259",
+dmc,fraction: yield dry weight/fresh weight,0.2,0.85,0.75-0.85,https://ahdb.org.uk/knowledge-library/feeding-cereal-grains-to-livestock-moist-vs-dry-grain?utm_source=chatgpt.com,0.15,,https://doi.org/10.3390/molecules25215146,0.15,,Calculated from yield fresh weight and yield DM,0.15,,Assuming berries have similar DMC,,,,0.23,,"in Africa, https://www.ajol.info/index.php/eajsci/article/view/157473",
+Light saturation,(KWh/m2/d) the intensity at which additional increases in light do not increase photosynthesis,4.127777778,,,,8.33,7.8125-8.85,,,,,2.8,,https://doi.org/10.1093/jxb/ery118,2.8,,https://doi.org/10.1093/jxb/ery118,,,,
